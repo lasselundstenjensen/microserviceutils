@@ -1,6 +1,6 @@
 # microserviceutils
 
-Utility package for wrapping frequently used web service operations into easy to use functions.
+Utility package wrapping frequently used web service operations into easy to use functions.
 
 When having web service/micro service functions like this:
 ```go
