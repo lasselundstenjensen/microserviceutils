@@ -12,7 +12,7 @@ you can simply use the wrapper methods for dumping the content of the request/re
 microserviceutils.Dump(r)
 ```
 
-which prints something like this to the console (for debugging/diagnostics):
+which prints something like this to the console (for debugging/diagnostics), including what is in the body of the request/response, if anything:
 
 ```
 GET /run HTTP/1.1
