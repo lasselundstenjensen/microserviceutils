@@ -31,11 +31,9 @@ func readBodyContent(stream io.ReadCloser) []byte {
 	return body
 }
 
-func Unmarshal(r interface{}, o interface{}) {
+func Unmarshal(r interface{}, o interface{}) error {
 	error := json.Unmarshal(getBody(r), &o)
-	if error != nil {
-		log.Fatal(error)
-	}
+	return error
 }
 
 func UnmarshalBytes(b []byte, o interface{}) {
